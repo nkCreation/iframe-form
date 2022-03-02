@@ -6,7 +6,7 @@ bus.on("contribution:resize", () => {
   document.querySelectorAll('iframe.contribution').forEach(iframe => resizeFrame(iframe))
 })
 
-document.querySelectorAll('iframe.contribution').forEach(iframe => resizeFrame(iframe))
+document.querySelectorAll('iframe.contribution').forEach(iframe => iframe.onload = resizeFrame(iframe))
 
 bus.on("contribution:submit", (data) => {
   document.getElementById('message').textContent = data;
