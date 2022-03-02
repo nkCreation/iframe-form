@@ -1,0 +1,23 @@
+{
+  "name": "test-iframe",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "framebus": "^5.1.2",
+    "milligram": "^1.4.1",
+    "normalize.css": "^8.0.1",
+    "petite-vue": "^0.4.1"
+  }
+}

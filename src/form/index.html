@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My IFRAME code</title>
+    <link rel="stylesheet" href="./form.css" />
+    <script type="module" src="./form.js" />
+  </head>
+  <body>
+    <h1>Form embedded in an iframe demo</h1>
+
+    <p>
+      This iframe use <strong>petite-vue</strong> for binding event, and
+      <strong>framebus</strong> to easily send messages.
+    </p>
+
+    <p>
+      When clicking on the button, the iframe sent the input's value in a
+      message.<br />Then, the parent listen and displayed it. I think. Because
+      I'm just an iframe I can't say if this is true.
+    </p>
+
+    <form @submit.prevent="submit">
+      <label for="message"> Message</label>
+      <input type="text" v-model="message" id="message" />
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>
